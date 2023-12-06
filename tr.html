@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Randomly Quest to Exercise </h1>
-    <button onclick=" randomExercise(); outputQuest(); showboard();" class="butran">Random</button>
+    <button onclick=" randomExercise(); outputQuest(); resetTimer(); startTimer(); updateTimer();" class="butran">Random</button>
     <h2>Your Quest : </h2>
     <table>
     <tr class="Quest">
@@ -24,6 +24,17 @@
         <th id="Quest3n" class="Quest"></th>
     </tr>
     </table>
+    <h2 id="Time">Time : </h2>
+    <button id="Complete" onclick="stopTimer();">Complete</button>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p id="congrat">Congratulations!</p>
+          <p id="showtime"></p>
+          <p id="forsomeone"></p>
+        </div>
+      </div>
 
     <script src="tr.js" ></script>
 </body>
