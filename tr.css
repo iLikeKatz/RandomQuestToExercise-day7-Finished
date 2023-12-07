@@ -7,8 +7,8 @@ body {
 }
 table {
     font-size: 35px;
-     border-collapse: collapse; /* รวมเส้นขอบเขตของเซลล์เป็นเส้นเดียว */
-      width: 100%; /* กำหนดความกว้างของตาราง */
+    border-collapse: collapse; /* รวมเส้นขอบเขตของเซลล์เป็นเส้นเดียว */
+    width: 100%; /* กำหนดความกว้างของตาราง */
     }
 h2{
     text-align: left;
@@ -59,4 +59,8 @@ th , tr{
   #congrat , #showtime, #forsomeone{
     font-size: 50px;
   }
+  .unlock{
+    margin-inline: 50%;
+  }
+
   

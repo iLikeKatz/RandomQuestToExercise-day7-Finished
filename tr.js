@@ -50,6 +50,8 @@ document.getElementById('Quest2').innerHTML = exercise2
 document.getElementById('Quest2n').innerHTML = random2
 document.getElementById('Quest3').innerHTML = exercise3
 document.getElementById('Quest3n').innerHTML = random3
+document.getElementById('Quest4').innerHTML = exercise3
+document.getElementById('Quest4n').innerHTML = random3
 } 
 
 let timer;
@@ -99,12 +101,24 @@ function resetTimer() {
 
 
 document.getElementById("Complete").addEventListener("click", function() {
-    var modal = document.getElementById("myModal");
+    let modal = document.getElementById("myModal");
     modal.style.display = "block";
     
-    var closeBtn = modal.getElementsByClassName("close")[0];
+    let closeBtn = modal.getElementsByClassName("close")[0];
     closeBtn.addEventListener("click", function() {
       modal.style.display = "none";
     });
   
 });
+
+function showunlock() {
+  let modal2 = document.getElementById("myModalUnlock4");
+  modal2.style.display = "block";
+  
+  let closeBtn2 = modal2.getElementsByClassName("close")[0];
+  closeBtn2.addEventListener("click", function() {
+    modal2.style.display = "none";
+  });
+
+};
+
