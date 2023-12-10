@@ -35,7 +35,7 @@ th , tr{
     background-color: rgba(0, 0, 0, 0.5);
   }
   
-  .modal-content {
+.modal-content {
     background-color: #fff;
     position: absolute;
     top: 50%;
@@ -49,18 +49,30 @@ th , tr{
 
   }
   
-  .close {
+.close {
     position: absolute;
     top: 0;
     right: 0;
     padding: 10px;
     cursor: pointer;
   }
-  #congrat , #showtime, #forsomeone{
+#congrat , #showtime, #forsomeone{
     font-size: 50px;
   }
-  .unlock{
+.unlock{
     margin-inline: 50%;
   }
 
-  
+.rusure4{
+    font-size: 40px;
+  }
+.NO , .YES {
+  font-size: 40px;
+}
+.NO{
+  width: 70%;
+  margin: 5%;
+}
+.YES {
+  width: 70%;
+}
