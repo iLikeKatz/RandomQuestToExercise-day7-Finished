@@ -48,6 +48,19 @@ th , tr{
     height: 70%;
 
   }
+  .modal-setcon {
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 70%; /* ปรับขนาดของหน้าต่างโมดัลในส่วนนี้ */
+    height: 90%;
+
+  }
   
 .close {
     position: absolute;
@@ -75,4 +88,15 @@ th , tr{
 }
 .YES {
   width: 70%;
+}
+#setting {
+  font-size: 25px;
+  margin-right: 100%;
+}
+.list{
+  margin-left: 5%;
+  display: inline;
+}
+#youadd {
+  margin-left: 9%;
 }

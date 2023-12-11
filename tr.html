@@ -7,6 +7,7 @@
     <title>Training Random</title>
 </head>
 <body>
+  <a onclick="Showset();" id="setting">Setting</a>
     <h1>Randomly Quest to Exercise </h1>
     <button onclick=" randomExercise(); outputQuest(); resetTimer(); startTimer(); updateTimer();" class="butran">Random</button>
     <h2>Your Quest : </h2>
@@ -45,6 +46,26 @@
           <p class="rusure4">Are you sure to unlock Quest4?</p>
           <button class="YES" onclick="ifyes();">YES</button>
           <button class="NO" onclick="ifno();">NO</button>
+        </div>
+      </div>
+
+      <div id="myModalShowset" class="modal">
+        <div class="modal-setcon">
+          <span class="close">&times;</span>  
+          <h1>Add Exercise List here</h1>
+          <input type="text" id="addexc" value="">
+          <button onclick="addexcfunc();">Submit</button>
+          <h2>Your Exercise List</h2>
+          <h2 class="list">Squat</h2>
+          <h2 class="list">Weight training</h2>
+          <h2 class="list">Sit ups</h2>
+          <h2 class="list">Push ups</h2>
+          <h2 class="list">Jogging</h2>
+          <h2 class="list">Chunches</h2>
+          <h2 class="list">Plank</h2>
+          <h2 class="list">Side Plank</h2>
+          <h2>You add</h2>
+          <h2 id="youadd"></h2>
         </div>
       </div>
 

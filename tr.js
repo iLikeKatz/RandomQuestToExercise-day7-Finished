@@ -1,4 +1,4 @@
-const exercises = [
+let exercises = [
   "Squat",
   "Weight training",
   "Sit ups",
@@ -85,6 +85,13 @@ document.querySelector('.Unlockq4n').innerHTML = random4
   }
 };
 
+function addexcfunc() {
+  let exclist = addexc.value
+  exercises.push(exclist);
+  document.getElementById('youadd').innerHTML += (`${exclist} &nbsp; &nbsp; &nbsp; &nbsp;`);
+  addexc.value = "";
+}
+
 let timer;
 let seconds = 0;
 let minutes = 0;
@@ -150,5 +157,14 @@ function showunlock() {
   closeBtn2.addEventListener("click", function() {
     modal2.style.display = "none";
   });
+};
 
+function Showset() {
+  let modal3 = document.getElementById("myModalShowset");
+  modal3.style.display = "block";
+  
+  let closeBtn3 = modal3.getElementsByClassName("close")[0];
+  closeBtn3.addEventListener("click", function() {
+    modal3.style.display = "none";
+  });
 };
