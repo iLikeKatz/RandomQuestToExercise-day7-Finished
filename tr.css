@@ -70,7 +70,7 @@ th , tr{
     cursor: pointer;
   }
 #congrat , #showtime, #forsomeone{
-    font-size: 50px;
+    font-size: 35px;
   }
 .unlock{
     margin-inline: 50%;
@@ -91,12 +91,19 @@ th , tr{
 }
 #setting {
   font-size: 25px;
-  margin-right: 100%;
+  text-align: left;
 }
 .list{
   margin-left: 5%;
   display: inline;
+  font-size: 20px;
+  
 }
 #youadd {
-  margin-left: 9%;
+  margin-left: 5%;
+  font-size: 20px;
+  
+}
+#submitexc{
+  display: inline;
 }

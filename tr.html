@@ -7,7 +7,7 @@
     <title>Training Random</title>
 </head>
 <body>
-  <a onclick="Showset();" id="setting">Setting</a>
+  <p onclick="Showset();" id="setting">Setting</p>
     <h1>Randomly Quest to Exercise </h1>
     <button onclick=" randomExercise(); outputQuest(); resetTimer(); startTimer(); updateTimer();" class="butran">Random</button>
     <h2>Your Quest : </h2>
@@ -53,18 +53,18 @@
         <div class="modal-setcon">
           <span class="close">&times;</span>  
           <h1>Add Exercise List here</h1>
-          <input type="text" id="addexc" value="">
-          <button onclick="addexcfunc();">Submit</button>
-          <h2>Your Exercise List</h2>
-          <h2 class="list">Squat</h2>
-          <h2 class="list">Weight training</h2>
-          <h2 class="list">Sit ups</h2>
-          <h2 class="list">Push ups</h2>
-          <h2 class="list">Jogging</h2>
-          <h2 class="list">Chunches</h2>
-          <h2 class="list">Plank</h2>
-          <h2 class="list">Side Plank</h2>
-          <h2>You add</h2>
+          <input type="text" id="addexc" value="" maxlength="30" oninput="checkLength();">
+          <button onclick="addexcfunc();" id="submitexc">Submit</button>
+          <h2><li>Your Exercise List</li></h2>
+          <h2 class="list" id="sq" onclick="removeSq();">Squat</h2>
+          <h2 class="list" id="wt" onclick="removeWt();">Weight training</h2>
+          <h2 class="list" id="su" onclick="removeSu();">Sit ups</h2>
+          <h2 class="list" id="pu" onclick="removePu();">Push ups</h2>
+          <h2 class="list" id="jog" onclick="removeJog();">Jogging</h2>
+          <h2 class="list" id="chu" onclick="removeChu();">Chunches</h2>
+          <h2 class="list" id="pl" onclick="removePl();">Plank</h2>
+          <h2 class="list" id="sp" onclick="removeSp();">Side Plank</h2>
+          <h2><li>Your add</li></h2>
           <h2 id="youadd"></h2>
         </div>
       </div>
