@@ -49,9 +49,35 @@
         </div>
       </div>
 
-      <div id="myModalShowset" class="modal">
-        <div class="modal-setcon">
+      <div id="myModalShowset" class="modal"> <!-- Showset -->
+
+        <div class="modal-showset">
           <span class="close">&times;</span>  
+          <nav class="nav">
+            <p onclick="ShowList();" class="headernav" id="el">Exercise List</p>
+            <p onclick="ShowMode();" class="headernav" id="sm">Select mode</p>
+          </nav>
+          <fieldset id="fiein3">
+            <h1 id="thank">Thank you!</h1>
+            <h2>Coding by<u> iJust LikeCats</u></h2>
+            <h2> my facebook :</h2>
+            <a href=
+            "https://www.facebook.com/profile.php?id=100091302262619&mibextid=kFxxJD">
+            <img class="mypic" src='shescute.jpg' width="100" height="100">
+        
+        </a>
+      </fieldset>
+        </div>
+      </div>
+
+      <div id="myModalList" class="modal"> <!-- Showlist-->
+        <div class="modal-setcon">
+          <span class="close">&times;</span>
+          <nav class="nav">
+            <p onclick="ShowList();" class="headernav" id="el">Exercise List</p>
+            <p onclick="ShowMode();" class="headernav" id="sm">Select mode</p>
+          </nav>
+
           <h1>Add Exercise List here</h1>
           <input type="text" id="addexc" value="" maxlength="30" oninput="checkLength();">
           <button onclick="addexcfunc();" id="submitexc">Submit</button>
@@ -69,6 +95,16 @@
         </div>
       </div>
 
+      <div id="myModalMode" class="modal"> <!-- ShowMode -->
+
+        <div class="modal-showmode">
+          <span class="close">&times;</span>  
+          <nav class="nav">
+            <p onclick="ShowList();" class="headernav" id="el">Exercise List</p>
+            <p onclick="ShowMode();" class="headernav" id="sm">Select mode</p>
+          </nav>
+        </div>
+      </div>
 
     <script src="tr.js" ></script>
 </body>

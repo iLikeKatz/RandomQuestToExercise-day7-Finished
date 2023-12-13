@@ -48,7 +48,7 @@ th , tr{
     height: 70%;
 
   }
-  .modal-setcon {
+  .modal-setcon , .modal-showset, .modal-showmode{
     background-color: #fff;
     position: absolute;
     top: 50%;
@@ -106,4 +106,21 @@ th , tr{
 }
 #submitexc{
   display: inline;
+}
+.nav{
+  background: white;
+  border: solid 1px white;
+  background: linear-gradient(180deg, #e2dfdf 0%, #d2cdcd 35%, #a7a5a5 100%);
+  border-radius: 8px;
+  color: white;
+   font-size: 20px;
+}
+.headernav {
+  display: inline-block;
+}
+#el {
+  padding-inline-start: -30%;
+}
+#sm {
+  margin-inline-start: 30%;
 }

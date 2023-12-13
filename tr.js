@@ -160,14 +160,50 @@ function showunlock() {
 };
 
 function Showset() {
+
   let modal3 = document.getElementById("myModalShowset");
-  modal3.style.display = "block";
+    modal3.style.display = "block";
   
   let closeBtn3 = modal3.getElementsByClassName("close")[0];
   closeBtn3.addEventListener("click", function() {
     modal3.style.display = "none";
   });
 };
+
+function ShowList() {
+  let modal3 = document.getElementById("myModalShowset");
+    modal3.style.display = "none";
+
+  let modal5 = document.getElementById('myModalMode');
+  modal5.style.display = "none";
+
+  let modal4 = document.getElementById('myModalList');
+  modal4.style.display = "block";
+  
+  let closeBtn4 = modal4.getElementsByClassName("close")[0];
+  closeBtn4.addEventListener("click", function() {
+    modal4.style.display = "none";
+  });
+}
+
+function ShowMode() {
+
+  let modal3 = document.getElementById("myModalShowset");
+    modal3.style.display = "none";
+
+  let modal4 = document.getElementById('myModalList');
+  modal4.style.display = "none";
+
+  let modal5 = document.getElementById('myModalMode');
+  modal5.style.display = "block";
+  
+  let closeBtn5 = modal5.getElementsByClassName("close")[0];
+  closeBtn5.addEventListener("click", function() {
+    modal5.style.display = "none";
+  });
+}
+
+
 function checkLength() {
 let input = document.getElementById('addexc');
 let inputLength = input.value.length;
