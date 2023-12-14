@@ -1,6 +1,8 @@
 body {
     font-style: normal;
     text-align: center;
+    background-color: rgb(21, 21, 21);
+    color: white;
 }
 .Quest{
     font-size: 35px;
@@ -14,16 +16,26 @@ h2{
     text-align: left;
 }
 th , tr{
-    border: 1px solid black; /* เส้นขอบเซลล์ทั้งหมด */
+    border: 1px solid rgb(247, 246, 246); /* เส้นขอบเซลล์ทั้งหมด */
     padding: 8px; /* กำหนดระยะห่างของข้อมูลในเซลล์ */
     text-align: left; 
     
 }
 .butran{
     font-size: 30px;
+    background: rgb(223, 163, 12);
+    border: solid 1px rgb(223, 163, 12);
+    background: linear-gradient(180deg, rgb(227, 198, 126) 0%, rgb(225, 187, 90) 35%, rgb(221, 165, 25) 100%);
+    border-radius: auto;
+    color: rgb(241, 235, 235);
 }
 #Complete{
     font-size: 30px;
+    background: rgb(223, 163, 12);
+    border: solid 1px rgb(223, 163, 12);
+    background: linear-gradient(180deg, rgb(227, 198, 126) 0%, rgb(225, 187, 90) 35%, rgb(221, 165, 25) 100%);
+    border-radius: auto;
+    color: rgb(231, 228, 228);
 }
 .modal {
     display: none;
@@ -36,7 +48,7 @@ th , tr{
   }
   
 .modal-content {
-    background-color: #fff;
+    background-color: rgb(21, 21, 21);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -49,7 +61,7 @@ th , tr{
 
   }
   .modal-setcon , .modal-showset, .modal-showmode{
-    background-color: #fff;
+    background-color: rgb(21, 21, 21);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -81,6 +93,11 @@ th , tr{
   }
 .NO , .YES {
   font-size: 40px;
+  background: rgb(223, 163, 12);
+  border: solid 1px rgb(223, 163, 12);
+  background: linear-gradient(180deg, rgb(227, 198, 126) 0%, rgb(225, 187, 90) 35%, rgb(221, 165, 25) 100%);
+  border-radius: auto;
+  color: rgb(235, 231, 231);
 }
 .NO{
   width: 70%;
@@ -92,6 +109,14 @@ th , tr{
 #setting {
   font-size: 25px;
   text-align: left;
+  background: rgb(223, 163, 12);
+  border: solid 1px rgb(223, 163, 12);
+  background: linear-gradient(180deg, rgb(227, 198, 126) 0%, rgb(225, 187, 90) 35%, rgb(221, 165, 25) 100%);
+  border-radius: auto;
+  color: white;
+  padding: 8px;
+  transform: translate(0% , -50%);
+  width: auto;
 }
 .list{
   margin-left: 5%;
@@ -106,11 +131,15 @@ th , tr{
 }
 #submitexc{
   display: inline;
+  background: rgb(223, 163, 12);
+  border: solid 1px rgb(223, 163, 12);
+  background: linear-gradient(180deg, rgb(227, 198, 126) 0%, rgb(225, 187, 90) 35%, rgb(221, 165, 25) 100%);
+  border-radius: auto;
 }
 .nav{
-  background: white;
-  border: solid 1px white;
-  background: linear-gradient(180deg, #e2dfdf 0%, #d2cdcd 35%, #a7a5a5 100%);
+  background: rgb(223, 163, 12);
+  border: solid 1px rgb(223, 163, 12);
+  background: linear-gradient(180deg, rgb(227, 198, 126) 0%, rgb(225, 187, 90) 35%, rgb(221, 165, 25) 100%);
   border-radius: auto;
   color: white;
    font-size: 20px;
@@ -141,6 +170,12 @@ fieldset{
   border-collapse: collapse;
   width: 45%;
   height: 5%;
+  background: rgb(223, 163, 12);
+  border: solid 1px rgb(223, 163, 12);
+  background: linear-gradient(180deg, rgb(227, 198, 126) 0%, rgb(225, 187, 90) 35%, rgb(221, 165, 25) 100%);
+  border-radius: auto;
+  color: rgb(255, 255, 255);
+  font-weight: normal;
 }
 @media only screen and (max-width: 414px) {
     .mypic{
@@ -153,7 +188,7 @@ fieldset{
   }
 
 .modal-setcon , .modal-showset, .modal-showmode{
-    background-color: #fff;
+    background-color: rgb(21, 21, 21);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -184,17 +219,17 @@ fieldset{
 
 }
 .NO {
-  font-size: 30px;
+  font-size: 25px;
   transform: translate(0% , 300%);
 }
 .YES {
-  font-size: 30px;
+  font-size: 25px;
   transform: translate(0% , 280%);
 }
 .Quest , .Questthan3 , .butran , .urq , #Time , #Complete{
   font-size: 20px;
 }
-h1{
+h1 , #congrat , #showtime , #forsomeone{
   font-size: 25px;
 }
 }
