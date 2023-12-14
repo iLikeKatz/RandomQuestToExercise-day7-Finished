@@ -10,7 +10,7 @@
   <p onclick="Showset();" id="setting">Setting</p>
     <h1>Randomly Quest to Exercise </h1>
     <button onclick=" randomExercise(); outputQuest(); resetTimer(); startTimer(); updateTimer();" class="butran">Random</button>
-    <h2>Your Quest : </h2>
+    <h2 class="urq">Your Quest : </h2>
     <table>
     <tr class="Quest">
         <th id="Quest1" class="Quest" >Quest1</th>
@@ -57,6 +57,7 @@
             <p onclick="ShowList();" class="headernav" id="el">Exercise List</p>
             <p onclick="ShowMode();" class="headernav" id="sm">Select mode</p>
           </nav>
+          <br>
           <fieldset id="fiein3">
             <h1 id="thank">Thank you!</h1>
             <h2>Coding by<u> iJust LikeCats</u></h2>
@@ -103,6 +104,14 @@
             <p onclick="ShowList();" class="headernav" id="el">Exercise List</p>
             <p onclick="ShowMode();" class="headernav" id="sm">Select mode</p>
           </nav>
+
+          <h1 id="urmode">Your mode now : Normal</h1>
+          <button id="ez" class="modeb" onclick="ezmode()">Easy</button>
+          <br>
+          <button id="nor" class="modeb" onclick="normode()">Normal</button>
+          <br>
+          <button id="hard" class="modeb" onclick="hardmode()">Hard</button>
+          <br>
         </div>
       </div>
 

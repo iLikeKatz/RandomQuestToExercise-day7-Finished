@@ -25,6 +25,8 @@ function ifyes() {
   let q4n = document.getElementById('Quest4n')
   q4n.setAttribute('class', 'Unlockq4n')
 }
+var nofex = 25;
+var notlowthan = 10;
 
 // ฟังก์ชันสุ่มการออกกำลังกาย
 function randomExercise() {
@@ -47,10 +49,10 @@ function randomExercise4() {
 
 
 function outputQuest() {
-  let random = Math.floor(Math.random()*40)
-  let random2 = Math.floor(Math.random()*40)
-  let random3 = Math.floor(Math.random()*40)
-  let random4 = Math.floor(Math.random()*40)
+  let random = Math.floor(Math.random()*nofex)
+  let random2 = Math.floor(Math.random()*nofex)
+  let random3 = Math.floor(Math.random()*nofex)
+  let random4 = Math.floor(Math.random()*nofex)
 
 
   const exercise = randomExercise();
@@ -58,18 +60,18 @@ function outputQuest() {
   const exercise3 = randomExercise3();
   const exercise4 = randomExercise4();
 
-  if (random==0) {
-    random = Math.floor(Math.random()*40)
-  }
-  if (random2==0) {
-    random2 = Math.floor(Math.random()*40)
-  }
-  if (random3==0) {
-    random3 = Math.floor(Math.random()*40)
-  }
-  if (random4==0) {
-    random4 = Math.floor(Math.random()*40)
-  }
+   while (random<notlowthan) {
+    random = Math.floor(Math.random()*nofex)
+      }
+   while (random2<notlowthan) {
+    random2 = Math.floor(Math.random()*nofex)
+      }
+   while (random3<notlowthan) {
+    random3 = Math.floor(Math.random()*nofex)
+      }
+   while (random4<notlowthan) {
+    random4 = Math.floor(Math.random()*nofex)
+      }
 
 
   document.getElementById('Quest1').innerHTML = exercise
@@ -308,3 +310,20 @@ function removeSp() {
   }}
 }
 
+function ezmode() {
+  nofex = 10;
+  document.getElementById('urmode').innerHTML = 'Your mode now : Easy'
+  notlowthan = 1;
+
+}
+function normode() {
+  nofex = 25;
+  document.getElementById('urmode').innerHTML = 'Your mode now : Normal'
+  notlowthan = 10;
+
+}
+function hardmode() {
+  nofex = 45;
+  document.getElementById('urmode').innerHTML = 'Your mode now : Hard'
+  notlowthan = 20;
+}

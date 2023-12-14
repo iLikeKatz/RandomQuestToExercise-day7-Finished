@@ -1,5 +1,5 @@
 body {
-    font-style: oblique;
+    font-style: normal;
     text-align: center;
 }
 .Quest{
@@ -111,16 +111,90 @@ th , tr{
   background: white;
   border: solid 1px white;
   background: linear-gradient(180deg, #e2dfdf 0%, #d2cdcd 35%, #a7a5a5 100%);
-  border-radius: 8px;
+  border-radius: auto;
   color: white;
    font-size: 20px;
+
 }
 .headernav {
   display: inline-block;
+
 }
 #el {
   padding-inline-start: -30%;
 }
 #sm {
   margin-inline-start: 30%;
+}
+fieldset{
+  padding-bottom: 20%;
+}
+.mypic{
+  width: 20%;
+  height: 20%;
+}
+.modeb{
+  display: block;
+  margin-inline-start: 25%;
+  font-size: 20px;
+  border: 1px solid;
+  border-collapse: collapse;
+  width: 45%;
+  height: 5%;
+}
+@media only screen and (max-width: 414px) {
+    .mypic{
+      width: 40%;
+      height: 40%;
+    }
+
+.headernav{
+    font-size: 15px;
+  }
+
+.modal-setcon , .modal-showset, .modal-showmode{
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 85%; /* ปรับขนาดของหน้าต่างโมดัลในส่วนนี้ */
+    height: 90%;
+
+}
+ body{
+  font-style: normal;
+
+ }
+ #el {
+  padding-inline-start: -20%;
+}
+#sm {
+  margin-inline-start: 20%;
+}
+#submitexc{
+  margin-top: 5px;
+}
+.rusure4 {
+  font-size: 20px;
+    transform: translate(0% , 200%);
+
+}
+.NO {
+  font-size: 30px;
+  transform: translate(0% , 300%);
+}
+.YES {
+  font-size: 30px;
+  transform: translate(0% , 280%);
+}
+.Quest , .Questthan3 , .butran , .urq , #Time , #Complete{
+  font-size: 20px;
+}
+h1{
+  font-size: 25px;
+}
 }
